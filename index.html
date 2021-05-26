@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/08277f8ec1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo</title>
+  </head>
+  <body>
+    <div class="top">
+      <!-- <img
+        src="./images/bg-desktop-dark.jpg"
+        alt="Background"
+        class="top-img"
+      /> -->
+    </div>
+    <div class="content">
+      <div class="content-header">
+        <h1 class="logo">TODO</h1>
+        <img src="./images/icon-sun.svg" alt="Theme Toggler" class="toggle" />
+      </div>
+      <div class="content-input">
+        <input type="text" id="todo-input" placeholder="Create a new todo..." />
+        <a href="#"><i class="fas fa-plus-square add-todo"></i></a>
+      </div>
+      <div class="todo-list">
+        <div class="todo-movements">
+          <input type="checkbox" class="tick" />
+          <p class="movement-text">Complete Online JavaScript Course</p>
+          <i class="far fa-times-circle delete"></i>
+        </div>
+      </div>
+      <div class="todo-footer">
+        <p class="items-left">0 items Left</p>
+        <div class="filter">
+          <a href="#" class="filter-link todo-footer-link all active-link"
+            >All</a
+          >
+          <a href="#" class="filter-link todo-footer-link active">Active</a>
+          <a href="#" class="filter-link todo-footer-link complete"
+            >Completed</a
+          >
+        </div>
+        <a href="#" class="clear todo-footer-link">Clear Completed</a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
