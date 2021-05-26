@@ -160,6 +160,7 @@ listContainer.addEventListener("click", (e) => {
     elements.listCompleated.splice(completeInd, 1);
     target.remove();
   }
+  itemsLeft.innerHTML = elements.listActive.length + " items left";
 });
 // ---------------------------------------------------------Implementing-Footer-----------------------------------------------
 todoFooter.onclick = (e) => {
