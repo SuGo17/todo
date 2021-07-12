@@ -173,6 +173,7 @@ todoFooter.onclick = (e) => {
     });
     i.classList.add("active-link");
   };
+  if(!target) return;
   if (target.innerHTML === "All") {
     elements.activeArr = elements.listAll;
     activeFilter(target);
