@@ -47,7 +47,7 @@ const common = () => {
   const movement = document.createElement("div");
   const tick = document.createElement("i");
   movement.classList.add("todo-movements");
-  tick.classList.add(...['fa','fa-trash-o']);
+  tick.classList.add(...['fa','fa-trash-o','delete']);
   movement.innerHTML = `<input type="checkbox" class="tick" /> <p class="movement-text">${todoTextElement.value}</p> `;
   todoTextElement.value = "";
   movement.append(tick);
